@@ -1,8 +1,8 @@
 ---
 title: "Workshop 8 TEMPLATE"
-subtitle: "insert your section time here"
-author: "insert your name here"
-date: "insert your name here"
+subtitle: "F9am"
+author: "Kai Suzuki"
+date: "2025-05-23
 format:
   html:
     toc: true # use this to display a table of contents
@@ -44,7 +44,13 @@ library(ggeffects) # getting model predictions
 library(MuMIn) # model selection
 
 # read in your data here
-
+drought_exp <- read_xlsx(
+  #write in file path to data excel file
+  here("data", "Valliere_etal_EcoApps_Data.xlsx"),
+  
+  # specify the sheet i want to read in
+  sheet = "First Harvest"
+)
 ```
 
 Storing some colors to use in visualizations, and setting a common `ggplot` theme for all plots:
